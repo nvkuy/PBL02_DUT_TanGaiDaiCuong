@@ -49,13 +49,6 @@
     <Compile Include="LearnDoc.cs" />
     <Compile Include="DictDoc.cs" />
     <Compile Include="Doc.cs" />
-<<<<<<< HEAD
-    <Compile Include="dict.cs" />
-    <Compile Include="dict.Designer.cs">
-      <DependentUpon>dict.cs</DependentUpon>
-    </Compile>
-    <Compile Include="learn.cs" />
-=======
     <Compile Include="dict.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,7 +58,15 @@
     <Compile Include="learn.cs">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> 974609d (Update code UI)
+    <Compile Include="dict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dict.Designer.cs">
+      <DependentUpon>dict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="learn.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="learn.Designer.cs">
       <DependentUpon>learn.cs</DependentUpon>
     </Compile>
