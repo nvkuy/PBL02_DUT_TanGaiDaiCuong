@@ -1,0 +1,14 @@
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\bin\Debug\TanGaiDaiCuong.exe.config
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\bin\Debug\TanGaiDaiCuong.exe
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\bin\Debug\TanGaiDaiCuong.pdb
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.csproj.AssemblyReference.cache
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.csproj.SuggestedBindingRedirects.cache
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.Properties.Resources.resources
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.csproj.GenerateResource.cache
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.csproj.CoreCompileInputs.cache
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.exe
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.pdb
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.welcome.resources
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.dict.resources
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.learn.resources
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.note.resources
