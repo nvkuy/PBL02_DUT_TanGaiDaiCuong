@@ -162,6 +162,7 @@
             this.btnChooseFile.Text = "Chọn file";
             this.btnChooseFile.UseVisualStyleBackColor = true;
             this.btnChooseFile.Visible = false;
+            this.btnChooseFile.Click += new System.EventHandler(this.btnChooseFile_Click);
             // 
             // tbSubContent
             // 
@@ -188,6 +189,7 @@
             this.btnFinish.TabIndex = 0;
             this.btnFinish.Text = "Thêm";
             this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // note
             // 
