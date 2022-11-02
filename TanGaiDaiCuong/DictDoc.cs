@@ -6,13 +6,13 @@ using System.IO;
 
 namespace TanGaiDaiCuong
 {
-    internal class DictDoc : Doc
+    public class DictDoc : Doc
     {
         private string response { get; set; }
 
         public DictDoc() { }
 
-        public DictDoc(ref string encodedData) {
+        public DictDoc(string encodedData) {
             string[] arr = encodedData.Replace("#", System.Environment.NewLine).Split('|');
             title = arr[0];
             content = arr[1];

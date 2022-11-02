@@ -29,28 +29,30 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lvLearn = new System.Windows.Forms.ListView();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.listView2);
+            this.panel3.Controls.Add(this.lvLearn);
             this.panel3.Location = new System.Drawing.Point(5, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(791, 446);
             this.panel3.TabIndex = 1;
             // 
-            // listView2
+            // lvLearn
             // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(4, 0);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(783, 445);
-            this.listView2.TabIndex = 0;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.lvLearn.HideSelection = false;
+            this.lvLearn.Location = new System.Drawing.Point(4, 0);
+            this.lvLearn.Margin = new System.Windows.Forms.Padding(4);
+            this.lvLearn.Name = "lvLearn";
+            this.lvLearn.Size = new System.Drawing.Size(783, 445);
+            this.lvLearn.TabIndex = 0;
+            this.lvLearn.UseCompatibleStateImageBehavior = false;
+            this.lvLearn.View = System.Windows.Forms.View.List;
+            this.lvLearn.SelectedIndexChanged += new System.EventHandler(this.lvLearn_SelectedIndexChanged);
             // 
             // learn
             // 
@@ -70,6 +72,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvLearn;
     }
 }

@@ -12,3 +12,9 @@ E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.welcome.
 E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.dict.resources
 E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.learn.resources
 E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.note.resources
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.detailDoc.resources
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\bin\Debug\Interop.WMPLib.dll
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\bin\Debug\AxInterop.WMPLib.dll
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\Interop.WMPLib.dll
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\AxInterop.WMPLib.dll
+E:\Projects\PBL2\TanGaiDaiCuong\TanGaiDaiCuong\obj\Debug\TanGaiDaiCuong.csproj.ResolveComReference.cache

@@ -50,13 +50,6 @@ namespace TanGaiDaiCuong
                     "không được chứa kí tự # hoặc |");
                 return;
             }
-            /*
-            string data = tbTitle.Text + "|" 
-                + tbContent.Text.Replace(System.Environment.NewLine, "#") 
-                + "|" + tbSubContent.Text.Replace(System.Environment.NewLine, "#");
-            string fname = (rbDict.Checked ? "dict.txt" : "learn.txt");
-            File.AppendAllText(fname, data + System.Environment.NewLine);
-            */
             Doc md;
             if (rbDict.Checked)
                 md = new DictDoc(tbTitle.Text, tbContent.Text, tbSubContent.Text);
@@ -70,6 +63,7 @@ namespace TanGaiDaiCuong
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Chọn file video";
+            ofd.Multiselect = false;
             ofd.ShowDialog();
             if (ofd.FileName == "")
                 return;

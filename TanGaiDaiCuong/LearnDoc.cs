@@ -3,7 +3,7 @@ using System.Runtime.InteropServices.ComTypes;
 
 namespace TanGaiDaiCuong
 {
-    internal class LearnDoc : Doc
+    public class LearnDoc : Doc
     {
         private string linkVideo;
 
@@ -11,7 +11,7 @@ namespace TanGaiDaiCuong
             get { return linkVideo; } 
             set {
                 string t1 = value;
-                if (t1.Length > 5) {
+                if (t1.Length > 4) {
                     string t2 = t1.Substring(t1.Length - 3);
                     if ((t2 != "mp4" && t2 != "avi" && t2 != "wmv"))
                         t1 = "";
@@ -23,7 +23,7 @@ namespace TanGaiDaiCuong
 
         public LearnDoc() { }
 
-        public LearnDoc(ref string encodedData)
+        public LearnDoc(string encodedData)
         {
             string[] arr = encodedData.Replace("#", System.Environment.NewLine).Split('|');
             title = arr[0];

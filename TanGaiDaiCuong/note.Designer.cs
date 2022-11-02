@@ -97,6 +97,7 @@
             this.tbContent.Location = new System.Drawing.Point(6, 28);
             this.tbContent.Multiline = true;
             this.tbContent.Name = "tbContent";
+            this.tbContent.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.tbContent.Size = new System.Drawing.Size(780, 188);
             this.tbContent.TabIndex = 2;
             // 
@@ -169,6 +170,7 @@
             this.tbSubContent.Location = new System.Drawing.Point(6, 29);
             this.tbSubContent.Multiline = true;
             this.tbSubContent.Name = "tbSubContent";
+            this.tbSubContent.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.tbSubContent.Size = new System.Drawing.Size(691, 77);
             this.tbSubContent.TabIndex = 2;
             // 

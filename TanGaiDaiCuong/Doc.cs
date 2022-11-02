@@ -2,11 +2,11 @@
 
 namespace TanGaiDaiCuong
 {
-    internal class Doc
+    public class Doc
     {
-        protected string title { get; set; }
+        public string title { get; set; }
 
-        protected string content { get; set; }
+        public string content { get; set; }
 
         public virtual string encode() { return ""; }
         public virtual void saveFile() { }
