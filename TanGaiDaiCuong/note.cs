@@ -50,11 +50,20 @@ namespace TanGaiDaiCuong
                     "không được chứa kí tự # hoặc |");
                 return;
             }
+            /*
             string data = tbTitle.Text + "|" 
                 + tbContent.Text.Replace(System.Environment.NewLine, "#") 
                 + "|" + tbSubContent.Text.Replace(System.Environment.NewLine, "#");
             string fname = (rbDict.Checked ? "dict.txt" : "learn.txt");
             File.AppendAllText(fname, data + System.Environment.NewLine);
+            */
+            Doc md;
+            if (rbDict.Checked)
+                md = new DictDoc(tbTitle.Text, tbContent.Text, tbSubContent.Text);
+            else
+                md = new LearnDoc(tbTitle.Text, tbContent.Text, tbSubContent.Text);
+            md.saveFile();
+            MessageBox.Show("Lưu thành công!");
         }
 
         private void btnChooseFile_Click(object sender, EventArgs e)

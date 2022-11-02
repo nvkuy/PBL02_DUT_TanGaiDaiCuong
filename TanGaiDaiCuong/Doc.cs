@@ -1,18 +1,15 @@
-﻿namespace TanGaiDaiCuong
+﻿using System.Windows.Forms;
+
+namespace TanGaiDaiCuong
 {
     internal class Doc
     {
-        protected string title
-        {
-            get { return title; }
-            set { title = value; }
-        }
+        protected string title { get; set; }
 
-        protected string content
-        {
-            get { return content; }
-            set { content = value; }
-        }
+        protected string content { get; set; }
+
+        public virtual string encode() { return ""; }
+        public virtual void saveFile() { }
 
     }
 }
