@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TrieNode.cs" />
+    <Compile Include="Trie.cs" />
     <Compile Include="detailDoc.cs">
       <SubType>Form</SubType>
     </Compile>

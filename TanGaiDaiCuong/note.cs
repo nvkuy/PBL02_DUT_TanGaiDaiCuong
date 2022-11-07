@@ -34,7 +34,7 @@ namespace TanGaiDaiCuong
         }
 
         bool isValid(string title, string content, string subcontent) {
-            if (title.Length == 0 || content.Length == 0)
+            if (title.Length == 0 || content.Length == 0 || title.Length > 60)
                 return false;
             foreach (char c in (title + content + subcontent))
                 if (c == '|' || c == '#')
@@ -47,7 +47,7 @@ namespace TanGaiDaiCuong
             if (!isValid(tbTitle.Text, tbContent.Text, tbSubContent.Text))
             {
                 MessageBox.Show("Dữ liệu tiêu đề hoặc nội dung không được rỗng, " +
-                    "không được chứa kí tự # hoặc |");
+                    "không được chứa kí tự # hoặc | tiêu đề không được quá 60 kí tự");
                 return;
             }
             Doc md;

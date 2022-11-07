@@ -1,2 +1,2 @@
 # PBL02_DUT_TanGaiDaiCuong
-App hướng dẫn tán gái trên windows =))
+How to pick up women, just for fun =))

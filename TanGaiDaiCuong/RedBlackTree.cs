@@ -22,6 +22,8 @@ namespace OpinionatedCode.Collections
                 RedBlackTreeNode<TKey, TValue> node = Root;
                 do
                 {
+                    if (node == null)
+                        throw new KeyNotFoundException();
                     if (node.HashedKey == hashedKey)
                         return node.Value;
                     node = hashedKey < node.HashedKey ? node.Left : node.Right;

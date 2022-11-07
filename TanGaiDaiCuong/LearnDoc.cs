@@ -1,5 +1,14 @@
-﻿using System.IO;
+﻿using AxWMPLib;
+using System;
+using System.Drawing;
+using System.IO;
+using System.Reflection;
 using System.Runtime.InteropServices.ComTypes;
+using System.Security.Policy;
+using System.Windows.Forms;
+using System.Xml.Linq;
+using TanGaiDaiCuong.Properties;
+using WMPLib;
 
 namespace TanGaiDaiCuong
 {
@@ -26,38 +35,53 @@ namespace TanGaiDaiCuong
         public LearnDoc(string encodedData)
         {
             string[] arr = encodedData.Replace("#", System.Environment.NewLine).Split('|');
-            title = arr[0];
-            content = arr[1];
+            Title = arr[0];
+            Content = arr[1];
             LinkVideo = arr[2];
         }
 
         public LearnDoc(string tt, string ct, string link)
         {
-            title = tt;
-            content = ct;
+            Title = tt;
+            Content = ct;
             LinkVideo = link;
         }
 
         public override string encode()
         {
-            return title + '|'
-                + content.Replace(System.Environment.NewLine, "#") + '|'
+            return Title + '|'
+                + Content.Replace(System.Environment.NewLine, "#") + '|'
                 + LinkVideo;
         }
 
         public override void saveFile()
         {
             Directory.CreateDirectory("database");
-            if (linkVideo.Length > 0)
+            if (LinkVideo.Length > 0)
             {
                 Directory.CreateDirectory(@"database\video");
-                string[] tmp = linkVideo.Replace(@"\", "/").Split('/');
+                string[] tmp = LinkVideo.Replace(@"\", "/").Split('/');
                 string flink = @"database\video\" + tmp[tmp.Length - 1];
                 if (!File.Exists(flink))
-                    File.Copy(linkVideo, flink);
-                linkVideo = flink;
+                    File.Copy(LinkVideo, flink);
+                LinkVideo = flink;
             }
             File.AppendAllText(@"database\learn.txt", this.encode() + System.Environment.NewLine);
+        }
+
+        public override void display()
+        {
+            base.display();
+            detailDoc.video_player.Visible = false;
+            detailDoc.lb_response.Visible = false;
+            if (File.Exists(LinkVideo))
+            {
+                detailDoc.video_player.settings.autoStart = false;
+                //detailDoc.video_player.settings.setMode("Loop", true);
+                detailDoc.video_player.Visible = true;
+                detailDoc.video_player.Size = new Size(detailDoc.instance.Width, detailDoc.instance.Height);
+                detailDoc.video_player.URL = LinkVideo;
+            }
         }
 
     }

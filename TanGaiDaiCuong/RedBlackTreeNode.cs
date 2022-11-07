@@ -46,7 +46,7 @@ namespace OpinionatedCode.Collections
         {
             IsLeaf = true;
             Color = ColorEnum.Black;
-            HashedKey = 0;
+            HashedKey = -999;
         }        
 
         public RedBlackTreeNode<TKey, TValue> Grandparent => Parent?.Parent;

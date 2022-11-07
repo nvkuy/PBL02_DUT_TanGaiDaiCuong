@@ -47,6 +47,7 @@
             this.lvLearn.HideSelection = false;
             this.lvLearn.Location = new System.Drawing.Point(4, 0);
             this.lvLearn.Margin = new System.Windows.Forms.Padding(4);
+            this.lvLearn.MultiSelect = false;
             this.lvLearn.Name = "lvLearn";
             this.lvLearn.Size = new System.Drawing.Size(783, 445);
             this.lvLearn.TabIndex = 0;

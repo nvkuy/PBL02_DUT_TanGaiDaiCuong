@@ -22,7 +22,7 @@ namespace TanGaiDaiCuong
         {
             foreach (LearnDoc ld in welcome.dataLearnDoc)
             {
-                lvLearn.Items.Add(ld.title);
+                lvLearn.Items.Add(ld.Title);
             }
         }
 

@@ -11,6 +11,7 @@ namespace TanGaiDaiCuong
     {
         public static List<LearnDoc> dataLearnDoc;
         public static List<DictDoc> dataDictDoc;
+        public static Trie dictTrie;
 
         public welcome()
         {
@@ -34,6 +35,11 @@ namespace TanGaiDaiCuong
             foreach (string line in dataLinesDict)
             {
                 dataDictDoc.Add(new DictDoc(line));
+            }
+            dictTrie = new Trie();
+            for (int id = 0; id < dataDictDoc.Count; id++)
+            {
+                dictTrie.insert(dataDictDoc[id].Title, id);
             }
         }
 
