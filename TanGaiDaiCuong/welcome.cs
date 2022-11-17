@@ -17,6 +17,20 @@ namespace TanGaiDaiCuong
         {
             InitializeComponent();
             loadData();
+            //GenDict();
+        }
+
+        private void GenDict()
+        {
+            Random rd = new Random();
+            for (int i = 0; i < 100; i++)
+            {
+                for (int j = 0; j < 60; j++)
+                    File.AppendAllText(@"database\dict.txt", "" + (char)(rd.Next(0, 26) + 'a'));
+                File.AppendAllText(@"database\dict.txt", "|a|");
+                File.AppendAllText(@"database\dict.txt", System.Environment.NewLine);
+
+            }
         }
 
         private void loadData()
@@ -63,9 +77,11 @@ namespace TanGaiDaiCuong
         {
             note fNote = new note();
             this.Hide();
+            note.needUpdate = false;
             fNote.ShowDialog();
             this.Show();
-            loadData();
+            if (note.needUpdate)
+                loadData();
         }
     }
 }

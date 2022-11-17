@@ -12,3 +12,5 @@ test update after add|abc##123##xyz##â|database\video\file_example_MP4_480_1_5M
 test content with video|some text ..|database\video\file_example_MP4_480_1_5MG.mp4
 demo video|abcxyz|database\video\GK GDTC_FULL.mp4
 check if mp4 cause error|avi file..|database\video\file_example_MP4_480_1_5MG.avi
+test|dfsdf|
+test văn bản có dấu|abc xyz##â|

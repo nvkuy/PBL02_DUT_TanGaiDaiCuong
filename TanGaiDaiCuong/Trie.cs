@@ -8,6 +8,7 @@ namespace TanGaiDaiCuong
 {
     public class Trie
     {
+        private const int max_suggestion = 11, inf = (int)1e9 + 7;
         private TrieNode root;
 
         public Trie() { root = new TrieNode(); }
@@ -22,14 +23,16 @@ namespace TanGaiDaiCuong
             return node;
         }
 
-        private void dfs(TrieNode node, List<int> rs)
+        private void dfs(TrieNode node, List<int> rs, int max_size)
         {
-            List<int> t1 = node.EndOf;
-            List<char> t2 = node.Keys;
-            foreach (int t3 in t1)
+            foreach (int t3 in node.EndOf)
+            {
+                if (rs.Count >= max_size)
+                    return;
                 rs.Add(t3);
-            foreach (char t3 in t2)
-                dfs(node.getChild(t3), rs);
+            }
+            foreach (char t3 in node.Keys)
+                dfs(node.getChild(t3), rs, max_size);
         }
 
         public void insert(string data, int id) {
@@ -41,20 +44,24 @@ namespace TanGaiDaiCuong
         {
             List<int> rs = new List<int>();
             TrieNode node = find(data);
-            dfs(node, rs);
+            dfs(node, rs, inf);
             return rs;
         }
 
-        public int findAny(string data)
+        public List<int> findAny(string data)
         {
-            TrieNode node = find(data);
+            /*TrieNode node = find(data);
             while (node.anyEnd() == -1)
             {
                 if (node.numOfChild() == 0)
                     return -1;
                 node = node.getChild(node.anyChild());
             }
-            return node.anyEnd();
+            return node.anyEnd();*/
+            List<int> rs = new List<int>();
+            TrieNode node = find(data);
+            dfs(node, rs, max_suggestion);
+            return rs;
         }
 
     }

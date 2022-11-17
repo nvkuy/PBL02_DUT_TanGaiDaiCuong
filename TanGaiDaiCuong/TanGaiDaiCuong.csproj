@@ -66,14 +66,8 @@
     <Compile Include="learn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dict.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="dict.Designer.cs">
       <DependentUpon>dict.cs</DependentUpon>
-    </Compile>
-    <Compile Include="learn.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="learn.Designer.cs">
       <DependentUpon>learn.cs</DependentUpon>

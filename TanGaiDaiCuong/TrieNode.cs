@@ -25,8 +25,7 @@ namespace TanGaiDaiCuong
 
         public TrieNode getChild(char c)
         {
-            try { children.Get(c); }
-            catch(KeyNotFoundException)
+            if (children.Get(c) == default(TrieNode))
             {
                 children.Add(c, new TrieNode());
                 keys.Add(c);

@@ -44,7 +44,7 @@ namespace TanGaiDaiCuong
         {
             TextBox tb = (TextBox)sender;
             found_data = new List<int>();
-            found_data.Add(welcome.dictTrie.findAny(tb.Text));
+            found_data = welcome.dictTrie.findAny(tb.Text);
             loadListView();
         }
 

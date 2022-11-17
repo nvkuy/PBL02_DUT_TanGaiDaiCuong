@@ -16,23 +16,19 @@ namespace OpinionatedCode.Collections
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public TValue Get(TKey key)
         {
-            try
+            int hashedKey = key.GetHashCode();
+            RedBlackTreeNode<TKey, TValue> node = Root;
+            do
             {
-                int hashedKey = key.GetHashCode();
-                RedBlackTreeNode<TKey, TValue> node = Root;
-                do
-                {
-                    if (node == null)
-                        throw new KeyNotFoundException();
-                    if (node.HashedKey == hashedKey)
-                        return node.Value;
-                    node = hashedKey < node.HashedKey ? node.Left : node.Right;
-                } while (true);
-            }
-            catch (NullReferenceException)
-            {
-                throw new KeyNotFoundException();
-            }
+                if (node == null)
+                    return default(TValue);
+                if (node.HashedKey == hashedKey)
+                    return node.Value;
+                node = hashedKey < node.HashedKey ? node.Left : node.Right;
+            } while (true);
+            if (node == null)
+                return default(TValue);
+            return node.Value;
         }
 
         internal RedBlackTreeNode<TKey, TValue> Root { get; private set; }
