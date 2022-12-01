@@ -13,6 +13,7 @@ namespace TanGaiDaiCuong
     public partial class dict : Form
     {
         private List<int> found_data;
+
         public dict()
         {
             InitializeComponent();
@@ -56,7 +57,7 @@ namespace TanGaiDaiCuong
                 ListViewItem lvi = lv.SelectedItems[0];
                 detailDoc ddoc = new detailDoc();
                 this.Hide();
-                ddoc.displayDoc(welcome.dataDictDoc[lvi.Index]);
+                ddoc.displayDoc(welcome.dataDictDoc[found_data[lvi.Index]]);
                 ddoc.ShowDialog();
                 this.Show();
             }
