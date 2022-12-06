@@ -14,3 +14,6 @@ demo video|abcxyz|database\video\GK GDTC_FULL.mp4
 check if mp4 cause error|avi file..|database\video\file_example_MP4_480_1_5MG.avi
 test|dfsdf|
 test văn bản có dấu|abc xyz##â|
+abcxyz|ádfasd#\#ád#f#ádf##|database\video\file_example_MP4_480_1_5MG.avi
+test|ksdjf;lkajsd##sdkfalskdjf##sdjfa|database\video\Y2Mate.is - hướng dẫn cách tán gái 4.0 (tán gái Hải Phòng full)-nZg9e25c0xc-480p-1656274222901.mp4
+cách tán gái|dfasdfa|database\video\Y2Mate.is - hướng dẫn cách tán gái 4.0 (tán gái Hải Phòng full)-nZg9e25c0xc-480p-1656274222901.mp4
