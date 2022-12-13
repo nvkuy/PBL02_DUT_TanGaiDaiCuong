@@ -50,7 +50,7 @@ namespace TanGaiDaiCuong
             if (Response.Length > 0)
             {
                 detailDoc.lb_response.Visible = true;
-                detailDoc.lb_response.Text = Content;
+                detailDoc.lb_response.Text = Response;
                 Size size = TextRenderer.MeasureText(detailDoc.lb_response.Text, detailDoc.lb_response.Font);
                 detailDoc.lb_response.Width = detailDoc.instance.Width;
                 detailDoc.lb_response.Height = size.Height;
