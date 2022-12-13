@@ -5,6 +5,7 @@ using System.Xml.Linq;
 using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
+using System;
 
 namespace TanGaiDaiCuong
 {
@@ -50,9 +51,9 @@ namespace TanGaiDaiCuong
             if (Response.Length > 0)
             {
                 detailDoc.lb_response.Visible = true;
-                detailDoc.lb_response.Text = Response;
+                detailDoc.lb_response.Text = "Cách xử lí: " + Response;
                 Size size = TextRenderer.MeasureText(detailDoc.lb_response.Text, detailDoc.lb_response.Font);
-                detailDoc.lb_response.Width = detailDoc.instance.Width;
+                detailDoc.lb_response.Width = Math.Max(detailDoc.instance.Width, size.Width);
                 detailDoc.lb_response.Height = size.Height;
             }
         }

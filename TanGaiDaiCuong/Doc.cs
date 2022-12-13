@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace TanGaiDaiCuong
@@ -19,7 +20,7 @@ namespace TanGaiDaiCuong
             detailDoc.lb_title.Text = Title;
             detailDoc.lb_content.Text = Content;
             Size size = TextRenderer.MeasureText(detailDoc.lb_content.Text, detailDoc.lb_content.Font);
-            detailDoc.lb_content.Width = detailDoc.instance.Width;
+            detailDoc.lb_content.Width = Math.Max(detailDoc.instance.Width, size.Width);
             detailDoc.lb_content.Height = size.Height;
         }
 
