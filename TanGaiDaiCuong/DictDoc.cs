@@ -51,7 +51,7 @@ namespace TanGaiDaiCuong
             if (Response.Length > 0)
             {
                 detailDoc.lb_response.Visible = true;
-                detailDoc.lb_response.Text = "Cách xử lí: " + Response;
+                detailDoc.lb_response.Text = "Cách xử lí:" + System.Environment.NewLine + Response;
                 Size size = TextRenderer.MeasureText(detailDoc.lb_response.Text, detailDoc.lb_response.Font);
                 detailDoc.lb_response.Width = Math.Max(detailDoc.instance.Width, size.Width);
                 detailDoc.lb_response.Height = size.Height;
