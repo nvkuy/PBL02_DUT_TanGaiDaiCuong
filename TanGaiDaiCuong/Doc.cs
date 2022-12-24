@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace TanGaiDaiCuong
 {
-    public class Doc
+    public class Doc : FileController
     {
         private string title;
 
