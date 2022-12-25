@@ -24,9 +24,9 @@ namespace TanGaiDaiCuong
         {
             // sinh test kiem tra toc do tim kiem
             Random rd = new Random();
-            for (int i = 0; i < 200000; i++)
+            for (int i = 0; i < 1000000; i++)
             {
-                for (int j = 0; j < 60; j++)
+                for (int j = 0; j < 66; j++)
                     File.AppendAllText(@"database\dict.txt", "" + (char)(rd.Next(0, 26) + 'a'));
                 File.AppendAllText(@"database\dict.txt", "|a|");
                 File.AppendAllText(@"database\dict.txt", System.Environment.NewLine);
